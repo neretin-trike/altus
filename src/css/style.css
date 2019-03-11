@@ -11,7 +11,16 @@ body {
 }
 
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    
+    border: 1px solid orangered;
+}
+
+:root {
+    --first-color: #22e8b3;
+    --second-color: #5c33d4; 
+    --second-color-darken: #251e5d;
+    --font-color: #474747;
 }
 
 figure {
