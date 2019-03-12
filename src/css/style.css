@@ -82,8 +82,9 @@
 :root {
     --first-color: #22e8b3;
     --second-color: #5c33d4; 
-    --second-color-darken: #251e5d;
-    --font-color: #474747;
+    --second-color-dark: #251e5d;
+    --font-color: #202020;
+    --font-color-light: #474747;
 }
 
 html {
@@ -248,4 +249,80 @@ ul {
 
     font-size: 2.4rem;
     font-weight: 500;
+}
+
+/*-------------------------------
+------------- ABOUT -------------
+-------------------------------*/
+
+.about {
+    position: relative;
+    background-image: url(../images/about_background.jpg);
+    background-size: cover;
+
+    /* padding-top: 18rem;
+    padding-bottom: 20.5rem; */
+}
+
+.about h2 {
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+
+    color: var(--second-color);
+    text-align: center;
+
+    font-size: 5.4rem;
+    font-family: 'Intro';
+    font-weight: 400;
+}
+
+.about h2 span {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.about h2::before {
+    content: '';
+    display: inline-block;
+
+    margin-right: 2rem;
+
+    width: 5.6rem;
+    height: 4rem;
+    background-image: url(../images/about_icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.about .history {
+    font-size: 2.2rem;
+    color: var(--font-color);
+    line-height: 3rem;
+}
+
+.about .about-item {
+    margin: 6rem 0;
+}
+
+.about .image {
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.about .caption {
+    margin-top: 2.6rem;
+
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.about .text {
+    margin-top: 2rem;
+
+    font-size: 1.8rem;
+    color: var(--font-color-light);
+
+    line-height: 3rem;
 }
