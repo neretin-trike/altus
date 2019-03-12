@@ -451,3 +451,90 @@ h2::before {
     top: 0; left: -2rem; bottom: 0;
     margin: auto;
 }
+
+/*-------------------------------
+------------ REVIEWS ------------
+-------------------------------*/
+
+.reviews {
+    position: relative;
+    background-image: url(../images/reviews_background.jpg);
+    background-size: cover;
+
+    padding-bottom: 5rem;
+
+    color: var(--second-color);
+}
+
+.reviews h2::before {
+    width: 4rem;
+    height: 3.5rem;
+    background-image: url(../images/reviews_icon.png);
+
+}
+
+.reviews h2 + p {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4.2rem;
+
+    width: 45rem;
+    margin: 0 auto;
+    margin-bottom: 7.6rem;
+
+    color: var(--font-color-light);
+}
+
+.reviews h2 + p span {
+    color: var(--first-color);
+    font-family: "Intro";
+    font-weight: 400;
+}
+
+.reviews .arrow-button {
+    height: 5.6rem;
+    width: 3.6rem;
+
+    background-image: url(../images/arrow_button.png);
+    background-position-y: 100%;
+    background-size: 100%;
+
+    margin: 0 auto;
+}
+
+.reviews .arrow-button:hover {
+    background-position-y: 0;
+}
+
+.reviews .arrow-button.previous {
+    transform: scale(1);
+}
+
+.reviews .arrow-button.next {
+    transform: scale(-1);
+}
+
+.reviews .quote {
+    text-align: center;
+    font-style: italic;
+    color: var(--font-color);
+    font-size: 2.4rem;    
+
+    line-height: 4.2rem;
+}
+
+.reviews .quote::before {
+    content: '“';
+    font-size: 9rem;
+    color: var(--second-color);
+    line-height: 1.5rem;
+
+    display: block;
+    text-align: left;
+}
+.reviews .review-info {
+    margin-top: 3rem;
+    text-align: right;
+    color: var(--second-color);
+    font-weight: 500;
+}
