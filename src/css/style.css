@@ -151,9 +151,45 @@ ul {
     height: 100%;
     width: 100%;
     top: 0;
+}
+
+.overlay-opacity-55{
     opacity: 0.55; 
 }
+
+.overlay-opacity-70{
+    opacity: 0.7; 
+}
   
+
+h2 {
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+
+    text-align: center;
+
+    font-size: 5.4rem;
+    font-family: 'Intro';
+    font-weight: 400;
+}
+
+h2 span {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+
+    margin-right: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+
 /*-------------------------------
 ------------- HEADER ------------
 -------------------------------*/
@@ -208,7 +244,7 @@ ul {
 
     bottom: 0;
 
-    background-image: url(../images/home_bevel.PNG);
+    background-image: url(../images/white_bevel.PNG);
     background-size: cover;
 }
 
@@ -238,6 +274,7 @@ ul {
 }
 
 .home .button {
+    margin: 0 auto;
     margin-top: 6.5rem;
 
     border: 2px solid white;
@@ -259,40 +296,16 @@ ul {
     position: relative;
     background-image: url(../images/about_background.jpg);
     background-size: cover;
-
-    /* padding-top: 18rem;
-    padding-bottom: 20.5rem; */
 }
 
 .about h2 {
-    margin-top: 3rem;
-    margin-bottom: 9rem;
-
     color: var(--second-color);
-    text-align: center;
-
-    font-size: 5.4rem;
-    font-family: 'Intro';
-    font-weight: 400;
-}
-
-.about h2 span {
-    font-family: 'Roboto';
-    font-weight: 700;
 }
 
 .about h2::before {
-    content: '';
-    display: inline-block;
-
-    margin-right: 2rem;
-
     width: 5.6rem;
     height: 4rem;
     background-image: url(../images/about_icon.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
 }
 
 .about .history {
@@ -325,4 +338,116 @@ ul {
     color: var(--font-color-light);
 
     line-height: 3rem;
+}
+
+/*-------------------------------
+--------- ACHIEVEMENTS ----------
+-------------------------------*/
+
+.achievements {
+    position: relative;
+    background-image: url(../images/achieve_background.jpg);
+    background-size: cover;
+
+    padding-top: 21rem;
+    padding-bottom: 30rem;
+
+    color: white;
+}
+
+.achievements::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    z-index: 998;
+    
+    height: 22rem;
+    width: 100%;
+
+    top: 0;
+
+    background-image: url(../images/achieve_bevel.PNG);
+    background-size: cover;
+}
+
+.achievements::after {
+    content: "";
+    display: block;
+    position: absolute;
+    
+    height: 22rem;
+    width: 100%;
+
+    bottom: 0;
+
+    background-image: url(../images/white_bevel.PNG);
+    background-size: cover;
+}
+
+.achievements h2::before {
+    width: 5rem;
+    height: 5rem;
+    background-image: url(../images/achieve_icon.png);
+}
+
+.achievements h2 + p {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 4.2rem;
+
+    width: 45rem;
+    margin: 0 auto;
+    margin-bottom: 7.6rem;
+}
+
+.achievements h2 + p span {
+    color: var(--first-color);
+    font-family: "Intro";
+    font-weight: 400;
+}
+
+.achievements .achieve-item {
+    width: 19rem;
+    height: 19rem;
+
+    margin: 0 auto;
+
+    border: 2px solid white;
+    border-radius: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.achievements .value {
+    font-family: "Intro";
+    font-size: 6.8rem;
+
+    text-align: center;
+}
+
+.achievements .title {
+    font-size: 2.6rem;
+
+    text-align: center;
+}
+
+.achievements .wrap {
+    position: relative;
+}
+.achievements .wrap:not(:first-child)::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+
+    width: 4rem;
+    height: 1rem;
+
+    background-color: var(--second-color);
+
+    top: 0; left: -2rem; bottom: 0;
+    margin: auto;
 }
