@@ -131,6 +131,10 @@ a {
     color: inherit; 
 }
 
+a:hover {
+    color: var(--second-color-dark);
+}
+
 h1, h2, h3, p, blockquote {
     margin: 0; 
 }
@@ -243,7 +247,7 @@ h2::before {
 
     bottom: 0;
 
-    background-image: url(../images/white_bevel.PNG);
+    background-image: url(../images/white_bevel.png);
     background-size: cover;
 }
 
@@ -276,7 +280,7 @@ h2::before {
     margin: 0 auto;
     margin-top: 6.5rem;
 
-    border: 2px solid white;
+    border: 2px solid var(--first-color);
     border-radius: 1.5rem;
     padding: 2rem 4.5rem;
 
@@ -285,6 +289,10 @@ h2::before {
 
     font-size: 2.4rem;
     font-weight: 500;
+}
+
+.home .button:hover {
+    background-color: var(--first-color);
 }
 
 /*-------------------------------
@@ -366,7 +374,7 @@ h2::before {
 
     top: 0;
 
-    background-image: url(../images/achieve_bevel.PNG);
+    background-image: url(../images/achieve_bevel.png);
     background-size: cover;
 }
 
@@ -380,7 +388,7 @@ h2::before {
 
     bottom: 0;
 
-    background-image: url(../images/white_bevel.PNG);
+    background-image: url(../images/white_bevel.png);
     background-size: cover;
 }
 
