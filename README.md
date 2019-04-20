@@ -12,4 +12,4 @@
 ### Запустить проект в режиме разработки
 `gulp`
 
-![](https://github.com/neretin-trike/altus/blob/master/screenshot.PNG)
+![](https://github.com/neretin-trike/altus/blob/master/screenshot.png)
